@@ -1,0 +1,68 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "image": "../image/main/real.webp",
+      "titulo": "Real Madrid",
+      "preco": 750.99,
+      "descricao": "camisa do maior do mundo"
+    },
+    {
+      "id": "2",
+      "image": "../image/main/city.webp",
+      "titulo": "Manchester City",
+      "preco": 695.99,
+      "descricao": "camisa do atual campeão ingles"
+    },
+    {
+      "id": "3",
+      "image": "../image/main/liverpoo.avif",
+      "titulo": "Liverpool",
+      "preco": 600.5,
+      "descricao": "camisa do liverpool"
+    },
+    {
+      "id": "4",
+      "image": "../image/main/PSG.avif",
+      "titulo": "PSG",
+      "preco": 590.9,
+      "descricao": "camisa do Campeão Frances"
+    },
+    {
+      "id": "5",
+      "image": "../image/main/roma.webp",
+      "titulo": "AS Roma",
+      "preco": 455.99,
+      "descricao": "camisa da Roma"
+    },
+    {
+      "id": "6",
+      "image": "../image/main/united.webp",
+      "titulo": "Manchester United",
+      "preco": 590,
+      "descricao": "camisa do Manchester United"
+    }
+    ,
+    {
+      "id": "7",
+      "image": "../image/main/barcelona.jpg",
+      "titulo": "FC Barcelona",
+      "preco": 610.2,
+      "descricao": "camisa do Barcelona"
+    },
+    {
+      "id": "8",
+      "image": "../image/main/sporting.jpg",
+      "titulo": "Sporting de Lisboa",
+      "preco": 505.55,
+      "descricao": "camisa do Campeão Porugues"
+    },
+    {
+      "id": "ffa7",
+      "image": "https://shoppingdabola.com.br/wp-content/uploads/2023/05/Benfica_23-24_Home_Jersey_Red_IR1105_01_laydown-1.png",
+      "titulo": "SL Benfica",
+      "preco": "380.20",
+      "descricao": "Camisa do SL Benfica"
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- Link para usar o fontawesome -->
-      <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link para usar o fontawesome -->
+    <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
       integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE"
@@ -18,7 +18,9 @@
     />
 
     <link
-      rel="shortcut icon" href="../favicon/favicon.ico"type="image/x-icon"
+      rel="shortcut icon"
+      href="../favicon/favicon.ico"
+      type="image/x-icon"
     />
 
     <link rel="stylesheet" href="../style/reset.css" />
@@ -27,73 +29,102 @@
     <link rel="stylesheet" href="../style/formulario.css" />
     <link rel="stylesheet" href="../style/footer.css" />
 
-  <title>Greek</title>
-</head>
-<body>
-  <header class="header">
-    <a href="../index.html" class="header__logo">
-      <span id="logo__um">Gre</span>
-      <span id="logo__dois">ek</span>
-    </a>
+    <script type="module" src="../js/criarProduto.js" defer></script>
+    <title>Greek-Formulário</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="../index.html" class="header__logo">
+        <span id="logo__um">Gre</span>
+        <span id="logo__dois">ek</span>
+      </a>
 
-    <div class="header__add">
-      <a href="#" class="header__add__item"
-        >Adicione <span class="fa fa-plus"></span
-      ></a>
-    </div>
-  </header>
+      <div class="header__add">
+        <a href="#" class="header__add__item"
+          >Adicione <span class="fa fa-plus"></span
+        ></a>
+      </div>
+    </header>
 
-  <main class="container__formulario">
-    <div class="formulario__titulo">
-      <h2>Adicione novos Produtos</h2>
-      <div class="bar"></div>
-    </div>
-    <form action="" class="formulario">
-      <fieldset class="campo">
-        <label class="campo__label" for="nome">Nome:</label>
-        <input class="campo__input" type="text" id="nome" placeholder="Insira o nome do produto" minlength="5" required>
-      </fieldset>
-      <fieldset class="campo">
-        <label class="campo__label" for="valor">Valor:</label>
-        <input class="campo__input" type="text" id="valor" placeholder="Insira o valor do produto" minlength="2" required>
-      </fieldset>
-      <fieldset class="campo">
-        <label class="campo__label" for="image">Imagem:</label>
-        <input class="campo__input" type="text" id="image" placeholder="Insira a url da imagem do produto" required>
-      </fieldset>
-      <fieldset class="campo">
-        <label class="campo__label" for="descricao">Descrição:</label>
-        <input class="campo__input" type="text" id="descricao" placeholder="Insira a descrição do produto" minlength="5" required>
-      </fieldset>
-      <div class="form__btn">
-        <button type="submit" class="btn__guarda guardar">Guardar</button>
-        <button type="reset" class="btn__limpar limpar">Limpar</button>
+    <main class="container__formulario">
+      <div class="formulario__titulo">
+        <h2>Adicione novos Produtos</h2>
+        <div class="bar"></div>
       </div>
-    </form>
-  </main>
+      
+      <form action="" class="formulario" data-form>
+        <fieldset class="campo">
+          <label class="campo__label" for="image">Imagem:</label>
+          <input
+            class="campo__input"
+            type="text"
+            id="image"
+            placeholder="Insira a url da imagem do produto"
+            required data-image
+          />
+        </fieldset>
+        <fieldset class="campo">
+          <label class="campo__label" for="nome">Nome:</label>
+          <input
+          class="campo__input"
+          type="text"
+          id="nome"
+          placeholder="Insira o nome do produto"
+          minlength="5"
+          required data-titulo
+          />
+        </fieldset>
+        <fieldset class="campo">
+          <label class="campo__label" for="valor">Preço:</label>
+          <input
+            class="campo__input"
+            type="text"
+            id="valor"
+            placeholder="Insira o valor do produto"
+            minlength="2"
+            required data-preco
+          />
+        </fieldset>
+        <fieldset class="campo">
+          <label class="campo__label" for="descricao">Descrição:</label>
+          <input
+            class="campo__input"
+            type="text"
+            id="descricao"
+            placeholder="Insira a descrição do produto"
+            minlength="10" maxlength="50"
+            required data-descricao
+          />
+        </fieldset>
+        <div class="form__btn">
+          <button type="submit" class="btn__guarda guardar">Guardar</button>
+          <button type="reset" class="btn__limpar limpar">Limpar</button>
+        </div>
+      </form>
+    </main>
 
-  <footer class="rodape">
-    <div class="footer__container">
-      <div class="footer__autor">
-        <p>Desenvolvido por:</p>
-        <span id="autor">Aurélio Capingana</span>
+    <footer class="rodape">
+      <div class="footer__container">
+        <div class="footer__autor">
+          <p>Desenvolvido por:</p>
+          <span id="autor">Aurélio Capingana</span>
+        </div>
+        <div class="footer__rede_socias">
+          <a href="https://github.com/aureliocapingana01"
+            ><span class="um">Git</span><span class="dois">hub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aur%C3%A9lio-capingana/"
+            ><span class="um">Liked</span><span class="dois">In</span>
+          </a>
+          <a href="https://www.facebook.com/aureliocapingano.manguena"
+            ><span class="um">Face</span><span class="dois">Book</span>
+          </a>
+        </div>
       </div>
-      <div class="footer__rede_socias">
-        <a href="https://github.com/aureliocapingana01"
-          ><span class="um">Git</span><span class="dois">hub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/aur%C3%A9lio-capingana/"
-          ><span class="um">Liked</span><span class="dois">In</span>
-        </a>
-        <a href="https://www.facebook.com/aureliocapingano.manguena"
-          ><span class="um">Face</span><span class="dois">Book</span>
-        </a>
+      <div class="footer__info">
+        <p>Todos os direitos reservados</p>
+        <p>&COPY; Copyright - 2024</p>
       </div>
-    </div>
-    <div class="footer__info">
-      <p>Todos os direitos reservados</p>
-      <p>&COPY; Copyright - 2024</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>

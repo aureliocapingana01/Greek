@@ -30,6 +30,9 @@
     <link rel="stylesheet" href="./style/main.css" />
     <link rel="stylesheet" href="./style/footer.css" />
 
+    <!-- <script src="./js/conexao.js"></script> -->
+    <script type="module" src="./js/mostrarProdutos.js" defer></script>
+
     <title>Greek</title>
   </head>
   <body>
@@ -52,8 +55,36 @@
         <div class="bar"></div>
       </div>
 
-      <ul class="container__produtos">
-        <li class="produto__item">
+      <ul class="container__produtos" data-produto>
+      </ul>
+    </main>
+    <footer class="rodape">
+      <div class="footer__container">
+        <div class="footer__autor">
+          <p>Desenvolvido por:</p>
+          <span id="autor">Aurélio Capingana</span>
+        </div>
+        <div class="footer__rede_socias">
+          <a href="https://github.com/aureliocapingana01"
+            ><span class="um">Git</span><span class="dois">hub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/aur%C3%A9lio-capingana/"
+            ><span class="um">Liked</span><span class="dois">In</span>
+          </a>
+          <a href="https://www.facebook.com/aureliocapingano.manguena"
+            ><span class="um">Face</span><span class="dois">Book</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer__info">
+        <p>Todos os direitos reservados</p>
+        <p>&COPY; Copyright - 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
+
+        <!-- <li class="produto__item">
           <img src="./image/main/city.webp" alt="" />
           <div class="produto__info">
             <h2 class="produto__titulo">Manchester City</h2>
@@ -67,6 +98,7 @@
           </div>
           <button class="produto__btn">Comprar</button>
         </li>
+        
         <li class="produto__item">
           <img src="./image/main/united.webp" alt="" />
           <div class="produto__info">
@@ -164,31 +196,4 @@
             </p>
           </div>
           <button class="produto__btn">Comprar</button>
-        </li>
-      </ul>
-    </main>
-    <footer class="rodape">
-      <div class="footer__container">
-        <div class="footer__autor">
-          <p>Desenvolvido por:</p>
-          <span id="autor">Aurélio Capingana</span>
-        </div>
-        <div class="footer__rede_socias">
-          <a href="https://github.com/aureliocapingana01"
-            ><span class="um">Git</span><span class="dois">hub</span>
-          </a>
-          <a href="https://www.linkedin.com/in/aur%C3%A9lio-capingana/"
-            ><span class="um">Liked</span><span class="dois">In</span>
-          </a>
-          <a href="https://www.facebook.com/aureliocapingano.manguena"
-            ><span class="um">Face</span><span class="dois">Book</span>
-          </a>
-        </div>
-      </div>
-      <div class="footer__info">
-        <p>Todos os direitos reservados</p>
-        <p>&COPY; Copyright - 2024</p>
-      </div>
-    </footer>
-  </body>
-</html>
+        </li> -->
