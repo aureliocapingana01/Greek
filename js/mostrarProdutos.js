@@ -25,13 +25,13 @@ const cardProduto = (id, image, titulo, preco, descricao) => {
   return lista;
 };
 
-async function buildProductsList(){
+const deleta = async () => {
   const productsListApi = await conexaoApi.listaProdutos();
   produto.innerHTML='';
   productsListApi.forEach(element => produto.appendChild(cardProduto(element.id, element.image, element.titulo, element.preco)))
 }
 
-buildProductsList()
+deleta()
 
 const listaProdutos = async () => {
   const listaApi = await conexaoApi.listaProdutos();
