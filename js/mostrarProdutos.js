@@ -2,7 +2,7 @@ import { conexaoApi } from "./conexao.js";
 
 const produto = document.querySelector("[data-produto]");
 
-const cardProduto = (id, image, titulo, preco, descricao) => {
+const cardProduto = ( image, titulo, preco, descricao) => {
   const lista = document.createElement("li");
   lista.className = "produto__item";
   lista.innerHTML = `
@@ -19,26 +19,16 @@ const cardProduto = (id, image, titulo, preco, descricao) => {
     </div>
     <button class="produto__btn">Deletar</button>
   `;
-  const deletar = lista.querySelector(".produto__btn");
-  deletar.addEventListener("click", () => conexaoApi.deletarProduto(id));
 
   return lista;
 };
 
-const deleta = async () => {
-  const productsListApi = await conexaoApi.listaProdutos();
-  produto.innerHTML='';
-  productsListApi.forEach(element => produto.appendChild(cardProduto(element.id, element.image, element.titulo, element.preco)))
-}
-
-deleta()
 
 const listaProdutos = async () => {
   const listaApi = await conexaoApi.listaProdutos();
   listaApi.forEach((element) =>
     produto.appendChild(
       cardProduto(
-        element.id,
         element.image,
         element.titulo,
         element.preco,

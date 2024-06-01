@@ -27,14 +27,9 @@ const criaProduto = async (image, titulo, preco, descricao) => {
   return conexaoCriaProdutoConvertida;
 };
 
-const deletarProduto = async (id) => {
-  const produto = await fetch(`http://localhost:3000/products/${id}`, {
-    method: "DELETE",
-  });
-};
 
 export const conexaoApi = {
   listaProdutos,
   criaProduto,
-  deletarProduto,
+  // deletarProduto,
 };

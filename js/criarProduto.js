@@ -1,7 +1,6 @@
 import { conexaoApi } from "./conexao.js";
 
 const form = document.querySelector("[data-form]");
-// const guardar = document.querySelector('.guadar')
 
 const criaProduto = async e => {
   e.preventDefault()
